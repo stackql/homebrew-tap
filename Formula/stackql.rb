@@ -1,10 +1,10 @@
 class Stackql < Formula
   desc "SQL interface for arbitrary resources with full CRUD support"
   homepage "https://stackql.io/"
-  url "https://github.com/stackql/stackql/archive/refs/tags/v0.3.293.tar.gz"
-  sha256 "ca28f4d8e4f0e90e03d939b21533a30b4b1fb8ef7fe3622c0587e43431dc2925"
+  url "https://github.com/stackql/stackql.git",
+      tag:      "v0.3.293",
+      revision: "d739e964a3f7ab917d774dd3fb6beb091abf2342"
   license "MIT"
-  head "https://github.com/stackql/stackql.git", branch: "main"
 
   depends_on "go" => :build
 
