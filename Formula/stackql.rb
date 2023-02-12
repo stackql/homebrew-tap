@@ -4,6 +4,7 @@ class Stackql < Formula
   url "https://github.com/stackql/stackql/archive/refs/tags/v0.3.293.tar.gz"
   sha256 "ca28f4d8e4f0e90e03d939b21533a30b4b1fb8ef7fe3622c0587e43431dc2925"
   license "MIT"
+  head "https://github.com/stackql/stackql.git", branch: "main"
 
   depends_on "go" => :build
 
