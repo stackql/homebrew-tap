@@ -25,6 +25,6 @@ class Stackql < Formula
 
   test do
     assert_match "stackql v#{version}", shell_output("#{bin}/stackql --version")
-    assert_includes "name", shell_output("#{bin}/stackql exec 'show providers;'")
+    assert_includes shell_output("#{bin}/stackql exec 'show providers;'"), "name"
   end
 end
